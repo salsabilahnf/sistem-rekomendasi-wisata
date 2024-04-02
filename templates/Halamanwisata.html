@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Rekomendasi Destinasi Wisata">
+    <meta name="description" content="">
+    <title>Hasil Rekomendasi</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/nicepage.css') }}" media="screen">
+<link rel="stylesheet" href="{{ url_for('static',filename='styles/Hasilrekomendasi.css') }}" media="screen">
+    <meta name="generator" content="Nicepage 6.5.3, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    
+    
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"logo": "static/images/default-logo.png"
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Hasil Rekomendasi">
+    <meta property="og:type" content="website">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
+  <body data-path-to-root="./" data-include-products="false" class="u-body u-xl-mode" data-lang="en">
+    <section class="u-align-center u-clearfix u-image u-shading u-section-2" id="sec-e9a5" data-image-width="964" data-image-height="1280">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-align-left u-text u-text-palette-3-base u-text-1">Destinasi Wisata di Pulau Bali</h2>
+        <p class="u-align-left u-text u-text-2">Berikut merupakan daftar nama wisata yang ada dalam sistem rekomendasi</p>
+        <div class="table-responsive mb-4 bg-white" style="max-height: 75vh; overflow-y: auto;">
+          <table class="table table-bordered position-relative border u-white">
+            <thead class="table-dark thead-dark text-white sticky-top">
+              <tr class="row100 head">
+                <th class="u-align-center u-border-1 u-border-black u-custom-color-6 u-table-cell u-table-cell-1">Destinasi Wisata</th>
+                <th class="u-align-center u-border-1 u-border-black u-custom-color-6 u-table-cell u-table-cell-1">Kategori</th>
+                <th class="u-align-center u-border-1 u-border-black u-custom-color-6 u-table-cell u-table-cell-1">Lokasi</th>
+                <th class="u-align-center u-border-1 u-border-black u-custom-color-6 u-table-cell u-table-cell-1">Daya Tarik</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for row in rows %}
+              <tr class="row100 body">
+                {% for i, val in row %}
+                <td style="text-align: left" class="u-border-1 u-border-black u-table-cell u-text-black">{{ val }}</td>
+                {% endfor %}
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+        <a href="/" class="u-border-none u-btn u-btn-round u-button-style u-palette-3-base u-radius u-btn-1">KEMBALI</a>
+      </div>
+    </section>
+    
+    <section class="u-backlink u-clearfix u-grey-80">
+
+        <div class="copyright">
+          &copy; Tugas Akhir <span></span>Statistika UII 2023</span>
+        </div>
+  
+        <p class="u-text">
+          <span>Created by</span>
+        </p>
+        <p class="u-text">
+          <span class="u-text-palette-3-base">Salsabila Hanifah</span>
+        </p>
+      </section>
+  
+</body></html>
